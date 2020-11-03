@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		589FD3222551F6C900320369 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 589FD3212551F6C900320369 /* art.scnassets */; };
+		589FD3342551FA8300320369 /* Jellyfish.dae in Resources */ = {isa = PBXBuildFile; fileRef = 589FD3332551FA8200320369 /* Jellyfish.dae */; };
 		58D397802551E4DC00DC1CF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D3977F2551E4DC00DC1CF0 /* AppDelegate.swift */; };
 		58D397822551E4DC00DC1CF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D397812551E4DC00DC1CF0 /* SceneDelegate.swift */; };
 		58D397842551E4DC00DC1CF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D397832551E4DC00DC1CF0 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		589FD3212551F6C900320369 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		589FD3332551FA8200320369 /* Jellyfish.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Jellyfish.dae; sourceTree = "<group>"; };
 		58D3977C2551E4DC00DC1CF0 /* AR-Hit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Hit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D3977F2551E4DC00DC1CF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D397812551E4DC00DC1CF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +60,9 @@
 		58D3977E2551E4DC00DC1CF0 /* AR-Hit */ = {
 			isa = PBXGroup;
 			children = (
+				589FD3212551F6C900320369 /* art.scnassets */,
 				58D3977F2551E4DC00DC1CF0 /* AppDelegate.swift */,
+				589FD3332551FA8200320369 /* Jellyfish.dae */,
 				58D397812551E4DC00DC1CF0 /* SceneDelegate.swift */,
 				58D397832551E4DC00DC1CF0 /* ViewController.swift */,
 				58D397852551E4DC00DC1CF0 /* Main.storyboard */,
@@ -126,6 +132,8 @@
 			files = (
 				58D3978C2551E4DE00DC1CF0 /* LaunchScreen.storyboard in Resources */,
 				58D397892551E4DE00DC1CF0 /* Assets.xcassets in Resources */,
+				589FD3342551FA8300320369 /* Jellyfish.dae in Resources */,
+				589FD3222551F6C900320369 /* art.scnassets in Resources */,
 				58D397872551E4DC00DC1CF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

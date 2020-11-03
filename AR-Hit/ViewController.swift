@@ -33,10 +33,10 @@ class ViewController: UIViewController {
     }
     
     func addNode(){
-        let node = SCNNode(geometry: SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0))
-        node.position = SCNVector3(0, 0, -1)
-        node.geometry?.firstMaterial?.diffuse.contents = UIColor.yellow
-        self.sceneView.scene.rootNode.addChildNode(node)
+        let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
+        let jellyFishNode = jellyFishScene?.rootNode.childNode(withName: "Jellyfish", recursively: false)
+        jellyFishNode?.position = SCNVector3(0, 0, -0.5)
+        self.sceneView.scene.rootNode.addChildNode(jellyFishNode!)
     }
     
     
