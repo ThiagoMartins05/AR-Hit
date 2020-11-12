@@ -56,7 +56,7 @@ class ViewController: UIViewController {
             if node.animationKeys.isEmpty{//faz a animação acontecer so se nao tiver animando antes
                 self.animateNode(node: node)
                 
-                
+                node.removeFromParentNode()
             }
            
         }
