@@ -48,9 +48,18 @@ class ViewController: UIViewController {
             print("didn't touch anything")
         } else {
             let results = hitTest.first!
-            let geometry = results.node.geometry
-            print(geometry as Any)
+            let node = results.node
+            self.animateNode(node: node)
         }
+    }
+    
+    func animateNode(node: SCNNode){
+        let spin = CABasicAnimation(keyPath: "position")
+        spin.fromValue = node.presentation.position // presentation representa o estado atual do objeto dentro da cena
+        
+        spin.toValue = SCNVector3(0,0,-2)
+        
+        
     }
 }
 
