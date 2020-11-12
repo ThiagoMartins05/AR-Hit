@@ -58,6 +58,7 @@ class ViewController: UIViewController {
         spin.fromValue = node.presentation.position // presentation representa o estado atual do objeto dentro da cena
         
         spin.toValue = SCNVector3(0,0,-2)
+        node.addAnimation(spin, forKey: "position")
         
         
     }
