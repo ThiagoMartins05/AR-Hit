@@ -59,6 +59,7 @@ class ViewController: UIViewController {
                 self.animateNode(node: node)
                 SCNTransaction.completionBlock = { // executa quando terminar a animacao
                     node.removeFromParentNode()
+                    self.addNode()
                 }
                 SCNTransaction.commit()
             }
