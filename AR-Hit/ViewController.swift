@@ -49,7 +49,11 @@ class ViewController: UIViewController {
         } else {
             let results = hitTest.first!
             let node = results.node
-            self.animateNode(node: node)
+            
+            if node.animationKeys.isEmpty{//faz a animação acontecer so se nao tiver animando antes
+                self.animateNode(node: node)
+            }
+           
         }
     }
     
