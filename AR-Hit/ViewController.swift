@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     func addNode(){
         let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
         let jellyFishNode = jellyFishScene?.rootNode.childNode(withName: "Jellyfish", recursively: false)
-        jellyFishNode?.position = SCNVector3(0, 0, -0.5)
+        jellyFishNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1), randomNumbers(firstNum: -0.5, secondNum: 0.5), randomNumbers(firstNum: -1, secondNum: 1))
         self.sceneView.scene.rootNode.addChildNode(jellyFishNode!)
     }
     
@@ -55,6 +55,8 @@ class ViewController: UIViewController {
             
             if node.animationKeys.isEmpty{//faz a animação acontecer so se nao tiver animando antes
                 self.animateNode(node: node)
+                
+                
             }
            
         }
@@ -72,5 +74,10 @@ class ViewController: UIViewController {
         
         
     }
+    
+    func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat{
+            return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum - secondNum, 0)
+            
+        }
 }
 
