@@ -54,9 +54,13 @@ class ViewController: UIViewController {
             let node = results.node
             
             if node.animationKeys.isEmpty{//faz a animação acontecer so se nao tiver animando antes
+               
+                SCNTransaction.begin()
                 self.animateNode(node: node)
-                
-                node.removeFromParentNode()
+                SCNTransaction.completionBlock = { // executa quando terminar a animacao
+                    node.removeFromParentNode()
+                }
+                SCNTransaction.commit()
             }
            
         }
