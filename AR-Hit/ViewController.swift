@@ -57,7 +57,9 @@ class ViewController: UIViewController {
         let spin = CABasicAnimation(keyPath: "position")
         spin.fromValue = node.presentation.position // presentation representa o estado atual do objeto dentro da cena
         
-        spin.toValue = SCNVector3(0,0,node.presentation.position.z - 1) // Relativo à origem do mundo
+        spin.toValue = SCNVector3(0,0,node.presentation.position.z - 1) // Relativo à origem do mundo, por isso tem que colocar node.presentatio.z
+        
+        spin.autoreverses = true
         node.addAnimation(spin, forKey: "position")
         
         
